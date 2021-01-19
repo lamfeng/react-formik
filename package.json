@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "repository": {
         "type": "git",
-        "url": "http://qqtech.ddnsking.com/melvin/react-formik.git"
+        "url": "https://github.com/lamfeng/react-formik.git"
     },
     "license": "MIT",
     "scripts": {
