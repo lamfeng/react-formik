@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { FormDebug } from '../_components/FormDebug';
 import * as Yup from 'yup';
 
 import { userService, alertService } from '@/_services';
@@ -8,7 +9,7 @@ import { userService, alertService } from '@/_services';
 function AddEdit({ history, match }) {
     const { id } = match.params;
     const isAddMode = !id;
-    
+
     const initialValues = {
         title: '',
         firstName: '',
@@ -166,6 +167,7 @@ function AddEdit({ history, match }) {
                             </button>
                             <Link to={isAddMode ? '.' : '..'} className="btn btn-link">Cancel</Link>
                         </div>
+                        <FormDebug />
                     </Form>
                 );
             }}
